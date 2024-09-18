@@ -1,0 +1,537 @@
+/* General Styles */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('cream.jpg');
+    background-size: 50%;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-position: opx;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e0b0b0a2;
+    background-image: url('Pin by Nguyễn Thu Trà on Lưu nhanh _ Pink wallpaper ipad, Pink wallpaper iphone, Pastel pink wallpaper.jpeg');
+    background-size: 29%;
+}
+
+/* Section Styles */
+/* Centering the About Section Content */
+.section {
+    padding: 60px 30px; /* Add padding to sections for spacing */
+    margin-top: 0px;
+    background-color: #e0b0b0a2;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    text-align: center; /* Center-align text within the section */
+    display: flex; /* Use Flexbox for alignment */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+}
+
+
+/* Header Text Styles */
+.name h1 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Navigation Styles */
+.top-nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d4a773;
+}
+
+/* Header Text Styles */
+.welcome {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+.portfolio {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+}
+
+.description {
+    font-size: 1rem;
+    color: #fff;
+    margin: 10px 0 20px;
+}
+
+/* Button Styles */
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e1a9c03e;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f5eaf1b0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* About Section Adjustment */
+.about-details {
+    padding-top: 30px; /* Add some padding if needed */
+}
+
+/* Container for the About section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Image Styling */
+.about-image {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* Blocks Container */
+.blocks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 55%;
+}
+
+/* Experience Section Container */
+.experience-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    gap: 20px; /* Space between blocks */
+    justify-content: center; /* Center the blocks horizontally */
+    padding: 20px 0; /* Padding for spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.experience-block {
+    flex: 1; /* Flex-grow to distribute space equally */
+    max-width: 400px; /* Increased max width for larger blocks */
+    padding: 40px; /* Increased padding for a more spacious look */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    color: rgb(139, 89, 125);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text inside blocks */
+    position: relative; /* Position relative to control absolute positioned elements inside */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for moving and shadow */
+    overflow: hidden; /* Hide overflow to ensure emojis do not spill out */
+}
+
+.experience-block:hover {
+    transform: translateY(-10px); /* Move the block up on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.experience-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ce3e3e72;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.experience-button:hover {
+    background-color: #e48282;
+}
+
+/* Emoji Styling */
+.emoji {
+    position: absolute; /* Position absolute for movement */
+    top: 50%; /* Start at the middle of the block */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the emoji */
+    font-size: 2rem;
+    opacity: 0; /* Initially hidden */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for moving and fading */
+}
+
+/* Hover effect to show and move emojis */
+.experience-block:hover .emoji {
+    opacity: 1; /* Make the emoji visible */
+    transform: translate(20px, -20px); /* Move the emoji when hovered */
+}
+#about p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Adjust font size if needed */
+    text-align: center; /* Center-align text */
+    font-family: cursive;
+}
+/* Work Experience Section */
+.work-experience-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.work-experience-content,
+.work-experience-image {
+    flex: 1; /* Each takes up 50% of the container's width */
+    padding: 20px;
+}
+
+.work-experience-content {
+    background-color: #c71e1e3b;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.work-experience-image {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.profile-pic {
+    width: 100%; /* Adjust to fit within its container */
+    max-width: 300px; /* Maximum size for the image */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to the image */
+}
+/* General Styles */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('cream.jpg');
+    background-size: 50%;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+/* Project Section */
+/* Project Section */
+.project-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: row-reverse; /* Image on the left, content on the right */
+}
+
+.project-content,
+.project-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-content {
+    background-color: #c71e1e3b;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+}
+
+.project-pic {
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #fdfdfd42;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: #ebbbbb58;
+}
+
+/* Achievements Section */
+.achievements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.achievements-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.achievement-pic {
+    width: 100%;
+    max-width: 400px; /* Adjust width if needed */
+    max-height: 300px; /* Set a maximum height for the image */
+    height: auto; /* Ensures the aspect ratio is maintained */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+}
+
+.achievements-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 20px;
+}
+
+.achievement-box {
+    background-color:   #c71e1e3b;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Hover effect */
+.achievement-box:hover {
+    transform: scale(1.05) translateY(-5px); /* Slightly enlarge and lift */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* General Styling */
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    padding: 60px 20px;
+}
+/* Certifications Section */
+.certifications-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.certifications-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.certifications-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.certification-block {
+    background-color: #c71e1e3b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: cursive;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect to move the blocks */
+.certification-block:hover {
+    transform: translateX(15px); /* Move the block slightly to the right */
+}
+
+.profile-pic {
+    width: 100%; /* Fit within container */
+    max-width: 300px; /* Adjust max size */
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+
+/* General Section Styling */
+.section {
+    padding: 50px 20px;
+    margin: 0px 0;
+}
+
+/* Styles for the Contact Section */
+#contact {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 3rem;
+    background-color: #c71e1e3b;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 0.75rem;
+    border: none;
+    background-color: #e78e8e;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #d46868;
+}
+
+.contact-image {
+    width: 70%;
+    opacity: 0.4;
+   
+
+}
+
+.contact-image img {
+    width: 70%;
+    border-radius: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-links a {
+    display: inline-block; /* Makes the anchor tags fit around the images */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+  }
+  
+  .social-links img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Make sure width and height are the same for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle area without distortion */
+    margin: 0 10px; /* Adds space between the icons */
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.1); /* Scales the image up by 10% on hover */
+  }
